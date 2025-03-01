@@ -1,0 +1,20 @@
+You are analyzing a user preference statement in a robot-assisted feeding pipeline. The user may describe preferences for:
+
+Feeding Sequence: The order of foods, or specific patterns of eating (e.g., "alternate bites of rice and chicken", "I only want rice and vegetables").
+Motion Parameters: There are four motion parameters the user may have a preference for:
+    - Bite size - How much food to pick up (eg., "give me bigger bites for the chicken)
+    - Distance to mouth - The distance of the spoon to the user's mouth during bite transfer (eg., "make sure to keep the spoon further when feeding me mashed potatoes")
+    - Exit angle - How the spoon leaves the user's mouth (e.g., "tilt the spoon higher for rice")
+    - Transfer speed - The speed at which to feed the user food (e.g., "feed me slower for the carrots").
+
+User preference: {%s}
+
+Decide if the preference relates to feeding sequence, motion parameters, or both. Then, extract and summarize the detected preferences into two sentences. 
+Additional notes:
+    - ALWAYS give your answers as if you are me, speaking in the first person. 
+    - If possible try to follow the wording that was used in the user preference.
+    - Output "None" if no preference is provided
+
+Format your response as follows:
+Feeding sequence preference: <Extracted preference>
+Motion parameters preference: <Extracted preference>
